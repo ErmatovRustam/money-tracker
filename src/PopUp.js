@@ -6,8 +6,13 @@ function PopUp(props) {
     props.click()
   }
 
+  const style = {
+    backgroundColor: 'red'
+  }
+
   return (
-    <div className="modal_content">
+    <div className="modal_content" style={{ backgroundColor: props.backColor ? '#a0e1bb' : '#f7adac' }}>
+      {console.log(props.backColor)}
           <span className="close" onClick={handleClick}>  &times;{' '}</span>
           <div className = 'form-content'>
             <form id = 'form'>

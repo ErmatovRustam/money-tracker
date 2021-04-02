@@ -5,16 +5,19 @@ import PopUp from './PopUp'
 function App() {
   const [balance, setBalance] = useState(0);
   const [popUp, setPopUp] = useState(false);
+  const [isbackColorGr, setBackColorGr] = useState(true);
 
   const decBtnHandler = (amount) => {
     const finalAmount = balance - amount;
     setBalance(finalAmount)
+    setBackColorGr(false)
     setPopUp(true)
   }
 
   const incBtnHandler = (amount) => {
     const finalAmount = balance + amount;
     setBalance(finalAmount)
+    setBackColorGr(true)
     setPopUp(true)
   }
 
@@ -33,8 +36,8 @@ function App() {
         </div>
         <h3 id='balance'>{balance}</h3>
         {
-          popUp ? <div className="pop-up">
-            <PopUp click={ togglePop }/>
+          popUp ? <div className="pop-up" >
+            <PopUp click={ togglePop } backColor = {isbackColorGr} />
           </div> : null
         }
       </div>
