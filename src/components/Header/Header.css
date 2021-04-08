@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+}
+
+.main-body{
+  width: 350px;
+  margin: auto;
+  align-items: center;
+}
+
+.btn-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+#balance{
+  font-size: 30px;
+  margin: 1px;
+  background-color: rgb(251, 240, 135);
+  padding-top: 1px;
+  border-radius: 10px;
+  align-items: center;
+  font-family: cursive;
+}
+
+#inc-btn{
+  border: 10px solid #a0e1bb;
+  margin-right: 1px;
+  color: #a0e1bb;
+}
+
+#dec-btn{
+  border: 10px solid #f7adac;
+  margin-left: 1px;
+  color: #f7adac;
+}
+
+.btn{
+  width: 130px;
+  height: 70px;
+  border-radius: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 15px 15px 0px 15px;
+  padding: 10px;
+}
