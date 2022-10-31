@@ -46,7 +46,10 @@ function App() {
   
   return(
     <div className="App">
-      <Header decBtnHandler={() => decBtnHandler()} incBtnHandler={() => incBtnHandler()} balance={balance} color={ balanceColor}/>
+      <div className="main-body">
+        <Header decBtnHandler={() => decBtnHandler()} incBtnHandler={() => incBtnHandler()}
+          balance={balance} color={balanceColor} />
+        </div>
         {
           popUp ? <div className="pop-up" >
             <PopUp click={togglePop} backColor={isbackColorGr} count={countHandler}/>
